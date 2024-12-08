@@ -1,0 +1,43 @@
+<html>    
+</html>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <h2>Homework</h2>
+    <script>
+        var Continents =["North America","South America","Africa","Europe","Asia","Australia","Antartica"];
+        var j;
+        var text ="";
+        for(j=0; j<Continents.length;j++){
+            text += Continents[j] +"<br>" }
+            document.getElementById("demo").innerHTML= text;
+    </script>
+    <script>
+       var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("demo1").innerHTML="Today is" + day
+    </script>
+    <P>Note: the time and day (optional) changes as you cross the international date line (optional) or by crossing 15<sup>o</sup></P>
+</body>
